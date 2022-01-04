@@ -2,11 +2,11 @@
 
 ## Project Introduction
 
-The AdminHub-Web is the frontend project of the AdminHub.
+AdminHub-Web is the front-end project of AdminHub, which is based on React and MUI.
 
 ## 项目介绍
 
-AdminHub-Web 是 AdminHub 的前端项目。
+AdminHub-Web 是 AdminHub 的前端项目，基于 React 和 MUI 。
 
 ## 项目源码
 
