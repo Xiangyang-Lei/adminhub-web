@@ -30,5 +30,5 @@ AdminHub-Web 是 AdminHub 的前端项目，基于 React 和 MUI 。
 
 - 感谢 [JetBrains](https://www.jetbrains.com/) 提供的非商业开源软件开发授权
 
-- 感谢 [EL-ADMIN](https://github.com/elunez/eladmin) 大佬提供的后端模板
+- 感谢 [ELADMIN-WEB](https://github.com/elunez/eladmin-web) 大佬提供的前端模板
 
