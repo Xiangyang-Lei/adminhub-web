@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.pattern.go</groupId>
-    <artifactId>technology-sharing</artifactId>
+    <artifactId>cshub4j</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>data-structure-and-algorithm</artifactId>
