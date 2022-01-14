@@ -9,7 +9,7 @@ public class SortingHelper {
 
   public static <T extends Comparable<T>> Boolean isSorted(T[] array) {
 
-    for (int i = 0; i < array.length - 1; ++i) {
+    for (int i = 0; i < array.length - 1; i++) {
       if (array[i + 1].compareTo(array[i]) < 0) {
         return false;
       }

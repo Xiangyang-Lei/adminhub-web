@@ -39,11 +39,10 @@ public class A_02_SelectionSort {
     System.out.println();
   }
 
-  public static <T extends Comparable<T>> void sort(T[] array) {
+  public static <E extends Comparable<E>> void sort(E[] array) {
 
     // array[0...i) 是有序的；array[i...n) 是无序的
-    for (int i = 0; i < array.length; ++i) {
-
+    for (int i = 0; i < array.length; i++) {
       // 选择 array[i...n) 中的最小值的索引
       int minIndex = i;
       for (int j = i; j < array.length; ++j) {
@@ -57,7 +56,7 @@ public class A_02_SelectionSort {
   }
 
   // array[0...index) 是有序的；array[index...n) 是无序的
-  public static <T extends Comparable<T>> void recursionSort(T[] array, int index) {
+  public static <E extends Comparable<E>> void recursionSort(E[] array, int index) {
 
     if (index >= array.length) {
       return;
@@ -65,7 +64,7 @@ public class A_02_SelectionSort {
 
     // 选择 array[index...n) 中的最小值的索引
     int minIndex = index;
-    for (int i = index; i < array.length; ++i) {
+    for (int i = index; i < array.length; i++) {
       if (array[i].compareTo(array[minIndex]) < 0) {
         minIndex = i;
       }
@@ -76,9 +75,9 @@ public class A_02_SelectionSort {
     recursionSort(array, ++index);
   }
 
-  private static <T> void swap(T[] array, int x, int y) {
+  private static <E> void swap(E[] array, int x, int y) {
 
-    T temp = array[x];
+    E temp = array[x];
     array[x] = array[y];
     array[y] = temp;
   }

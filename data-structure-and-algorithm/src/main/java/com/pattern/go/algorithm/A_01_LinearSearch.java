@@ -24,7 +24,7 @@ public class A_01_LinearSearch {
 
   public static <E> Integer search(E[] array, E target) {
 
-    for (int i = 0; i < array.length; ++i) {
+    for (int i = 0; i < array.length; i++) {
       if (array[i].equals(target)) {
         return i;
       }

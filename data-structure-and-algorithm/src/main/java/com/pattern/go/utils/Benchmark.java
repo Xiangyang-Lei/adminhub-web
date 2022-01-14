@@ -22,7 +22,7 @@ public class Benchmark {
       Integer[] array = ArrayGenerator.generateOrderedArray(size);
 
       long startTime = System.nanoTime();
-      for (int i = 0; i < iteration; ++i) {
+      for (int i = 0; i < iteration; i++) {
         A_01_LinearSearch.search(array, size);
       }
       long endTime = System.nanoTime();

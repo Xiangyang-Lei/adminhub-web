@@ -21,7 +21,7 @@ public class ArrayGenerator {
 
     Random random = new Random();
     Integer[] array = new Integer[size];
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
       array[i] = random.nextInt(bound);
     }
     return array;
