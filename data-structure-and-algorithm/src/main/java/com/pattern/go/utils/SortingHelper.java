@@ -14,6 +14,7 @@ public class SortingHelper {
         return false;
       }
     }
+
     return true;
   }
 
