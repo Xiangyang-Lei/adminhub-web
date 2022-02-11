@@ -1,8 +1,9 @@
 package com.pattern.go.datastructure;
 
-public class D_03_Array {
+@SuppressWarnings("unchecked")
+public class D_03_Array<E> {
 
-  private int[] data;
+  private E[] data;
   private int size;
 
   /**
@@ -12,7 +13,7 @@ public class D_03_Array {
    */
   public D_03_Array(int capacity) {
 
-    data = new int[capacity];
+    data = (E[]) new Object[capacity];
     size = 0;
   }
 
@@ -59,7 +60,7 @@ public class D_03_Array {
    * 
    * @param element
    */
-  public void addFirst(int element) {
+  public void addFirst(E element) {
 
     add(0, element);
   }
@@ -69,7 +70,7 @@ public class D_03_Array {
    * 
    * @param element
    */
-  public void addLast(int element) {
+  public void addLast(E element) {
 
     add(size, element);
   }
@@ -80,14 +81,14 @@ public class D_03_Array {
    * @param index
    * @param element
    */
-  public void add(int index, int element) {
-
-    if (size == data.length) {
-      throw new IllegalArgumentException("Add failed. Array is full.");
-    }
+  public void add(int index, E element) {
 
     if (index < 0 || index > size) {
       throw new IllegalArgumentException("Add failed. Require index >= 0 and index <= size.");
+    }
+
+    if (size == data.length) {
+      resize(2 * data.length);
     }
 
     for (int i = size - 1; i >= index; i--) {
@@ -105,7 +106,7 @@ public class D_03_Array {
    * @param index
    * @return
    */
-  public int get(int index) {
+  public E get(int index) {
 
     if (index < 0 || index >= size) {
       throw new IllegalArgumentException("Get failed. Index is illegal.");
@@ -120,7 +121,7 @@ public class D_03_Array {
    * @param index
    * @param element
    */
-  public void set(int index, int element) {
+  public void set(int index, E element) {
 
     if (index < 0 || index >= size) {
       throw new IllegalArgumentException("Set failed. Index is illegal.");
@@ -135,7 +136,7 @@ public class D_03_Array {
    * @param element
    * @return
    */
-  public boolean contains(int element) {
+  public boolean contains(E element) {
 
     for (int i = 0; i < size; i++) {
       if (data[i] == element) {
@@ -152,7 +153,7 @@ public class D_03_Array {
    * @param element
    * @return
    */
-  public int find(int element) {
+  public int find(E element) {
 
     for (int i = 0; i < size; i++) {
       if (data[i] == element) {
@@ -168,7 +169,7 @@ public class D_03_Array {
    * 
    * @return
    */
-  public int removeFirst() {
+  public E removeFirst() {
 
     return remove(0);
   }
@@ -178,7 +179,7 @@ public class D_03_Array {
    * 
    * @return
    */
-  public int removeLast() {
+  public E removeLast() {
 
     return remove(size - 1);
   }
@@ -189,18 +190,23 @@ public class D_03_Array {
    * @param index
    * @return
    */
-  public int remove(int index) {
+  public E remove(int index) {
 
     if (index < 0 || index >= size) {
       throw new IllegalArgumentException("Remove failed. Index is illegal.");
     }
 
-    int result = data[index];
+    E result = data[index];
     for (int i = index; i < size - 1; i++) {
       data[i] = data[i + 1];
     }
 
     size--;
+    data[size] = null; // loitering objects != memory leak
+
+    if (size == data.length / 2) {
+      resize(data.length / 2);
+    }
 
     return result;
   }
@@ -210,13 +216,29 @@ public class D_03_Array {
    * 
    * @param element
    */
-  public void removeElement(int element) {
+  public void removeElement(E element) {
 
     int index = find(element);
 
     if (index != -1) {
       remove(index);
     }
+  }
+
+  /**
+   * 将数组空间的容量变成newCapacity大小
+   * 
+   * @param newCapacity
+   */
+  private void resize(int newCapacity) {
+
+    E[] newData = (E[]) new Object[newCapacity];
+
+    for (int i = 0; i < size; i++) {
+      newData[i] = data[i];
+    }
+
+    data = newData;
   }
 
   @Override
