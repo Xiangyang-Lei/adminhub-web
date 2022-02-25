@@ -1,6 +1,6 @@
 package com.pattern.go.datastructure;
 
-public interface Stack<E> {
+public interface D_04_Stack<E> {
 
   int getSize();
 

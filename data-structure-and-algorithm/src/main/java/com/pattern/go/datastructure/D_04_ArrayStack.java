@@ -1,15 +1,15 @@
 package com.pattern.go.datastructure;
 
-public class ArrayStack<E> implements Stack<E> {
+public class D_04_ArrayStack<E> implements D_04_Stack<E> {
 
   private D_03_Array<E> array;
 
-  public ArrayStack(int capacity) {
+  public D_04_ArrayStack(int capacity) {
 
     array = new D_03_Array<E>(capacity);
   }
 
-  public ArrayStack() {
+  public D_04_ArrayStack() {
 
     array = new D_03_Array<E>();
   }

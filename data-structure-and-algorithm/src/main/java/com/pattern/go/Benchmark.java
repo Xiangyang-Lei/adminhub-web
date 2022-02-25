@@ -1,7 +1,7 @@
 package com.pattern.go;
 
 import com.pattern.go.algorithm.A_01_LinearSearch;
-import com.pattern.go.datastructure.ArrayStack;
+import com.pattern.go.datastructure.D_04_ArrayStack;
 import com.pattern.go.datastructure.D_02_ComparableStudent;
 import com.pattern.go.datastructure.D_03_Array;
 import com.pattern.go.utils.ArrayGenerator;
@@ -74,7 +74,7 @@ public class Benchmark {
 
   public static void stackTest() {
 
-    ArrayStack<Integer> stack = new ArrayStack<>();
+    D_04_ArrayStack<Integer> stack = new D_04_ArrayStack<>();
 
     for (int i = 0; i < 5; i++) {
       stack.push(i);
