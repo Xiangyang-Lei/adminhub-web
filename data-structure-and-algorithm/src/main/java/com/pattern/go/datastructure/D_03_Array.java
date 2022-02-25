@@ -1,6 +1,5 @@
 package com.pattern.go.datastructure;
 
-@SuppressWarnings("unchecked")
 public class D_03_Array<E> {
 
   private E[] data;
@@ -11,6 +10,7 @@ public class D_03_Array<E> {
    * 
    * @param capacity
    */
+  @SuppressWarnings("unchecked")
   public D_03_Array(int capacity) {
 
     data = (E[]) new Object[capacity];
@@ -98,6 +98,24 @@ public class D_03_Array<E> {
     data[index] = element;
 
     size++;
+  }
+
+  /**
+   * 获取数组中第一个元素
+   * 
+   * @return
+   */
+  public E getFirst() {
+    return get(0);
+  }
+
+  /**
+   * 获取数组中最后一个元素
+   * 
+   * @return
+   */
+  public E getLast() {
+    return get(size - 1);
   }
 
   /**
@@ -232,6 +250,7 @@ public class D_03_Array<E> {
    */
   private void resize(int newCapacity) {
 
+    @SuppressWarnings("unchecked")
     E[] newData = (E[]) new Object[newCapacity];
 
     for (int i = 0; i < size; i++) {
