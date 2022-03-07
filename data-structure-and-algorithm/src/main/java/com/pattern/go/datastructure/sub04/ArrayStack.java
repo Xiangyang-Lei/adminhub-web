@@ -1,17 +1,19 @@
-package com.pattern.go.datastructure;
+package com.pattern.go.datastructure.sub04;
 
-public class D_04_ArrayStack<E> implements D_04_Stack<E> {
+import com.pattern.go.datastructure.sub03.Array;
 
-  private D_03_Array<E> array;
+public class ArrayStack<E> implements Stack<E> {
 
-  public D_04_ArrayStack(int capacity) {
+  private Array<E> array;
 
-    array = new D_03_Array<E>(capacity);
+  public ArrayStack(int capacity) {
+
+    array = new Array<E>(capacity);
   }
 
-  public D_04_ArrayStack() {
+  public ArrayStack() {
 
-    array = new D_03_Array<E>();
+    array = new Array<E>();
   }
 
   public int getCapacity() {

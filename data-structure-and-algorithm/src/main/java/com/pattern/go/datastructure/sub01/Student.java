@@ -1,14 +1,14 @@
-package com.pattern.go.datastructure;
+package com.pattern.go.datastructure.sub01;
 
 import java.util.Objects;
 
-public class D_01_Student {
+public class Student {
 
   private Integer id;
   private String name;
   private Integer gender;
 
-  public D_01_Student(Integer id, String name, Integer gender) {
+  public Student(Integer id, String name, Integer gender) {
 
     this.id = id;
     this.name = name;
@@ -30,7 +30,7 @@ public class D_01_Student {
       return false;
     }
 
-    D_01_Student another = (D_01_Student) object;
+    Student another = (Student) object;
 
     return Objects.equals(id, another.id) && Objects.equals(name, another.name)
         && Objects.equals(gender, another.gender);

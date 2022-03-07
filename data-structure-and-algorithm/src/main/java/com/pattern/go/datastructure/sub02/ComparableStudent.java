@@ -1,14 +1,14 @@
-package com.pattern.go.datastructure;
+package com.pattern.go.datastructure.sub02;
 
 import java.util.Objects;
 
-public class D_02_ComparableStudent implements Comparable<D_02_ComparableStudent> {
+public class ComparableStudent implements Comparable<ComparableStudent> {
 
   private Integer id;
   private String name;
   private Integer score;
 
-  public D_02_ComparableStudent(Integer id, String name, Integer score) {
+  public ComparableStudent(Integer id, String name, Integer score) {
 
     this.id = id;
     this.name = name;
@@ -30,7 +30,7 @@ public class D_02_ComparableStudent implements Comparable<D_02_ComparableStudent
       return false;
     }
 
-    D_02_ComparableStudent another = (D_02_ComparableStudent) object;
+    ComparableStudent another = (ComparableStudent) object;
 
     return Objects.equals(id, another.id) && Objects.equals(name, another.name) && Objects.equals(score, another.score);
   }
@@ -42,7 +42,7 @@ public class D_02_ComparableStudent implements Comparable<D_02_ComparableStudent
   }
 
   @Override
-  public int compareTo(D_02_ComparableStudent another) {
+  public int compareTo(ComparableStudent another) {
 
     return this.score - another.score;
   }

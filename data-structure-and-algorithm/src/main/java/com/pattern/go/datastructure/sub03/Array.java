@@ -1,6 +1,6 @@
-package com.pattern.go.datastructure;
+package com.pattern.go.datastructure.sub03;
 
-public class D_03_Array<E> {
+public class Array<E> {
 
   private E[] data;
   private int size;
@@ -11,7 +11,7 @@ public class D_03_Array<E> {
    * @param capacity
    */
   @SuppressWarnings("unchecked")
-  public D_03_Array(int capacity) {
+  public Array(int capacity) {
 
     data = (E[]) new Object[capacity];
     size = 0;
@@ -20,7 +20,7 @@ public class D_03_Array<E> {
   /**
    * 无参数的构造函数，默认数组的容量capacity=10
    */
-  public D_03_Array() {
+  public Array() {
 
     this(10);
   }

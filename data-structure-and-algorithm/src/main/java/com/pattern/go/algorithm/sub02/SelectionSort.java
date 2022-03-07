@@ -1,20 +1,20 @@
-package com.pattern.go.algorithm;
+package com.pattern.go.algorithm.sub02;
 
-import com.pattern.go.datastructure.D_02_ComparableStudent;
+import com.pattern.go.datastructure.sub02.ComparableStudent;
 
-public class A_02_SelectionSort {
+public class SelectionSort {
 
-  private A_02_SelectionSort() {
+  private SelectionSort() {
   }
 
   public static void main(String[] args) {
 
     Integer[] array1 = { 1, 4, 2, 3, 6, 5 };
     Integer[] array2 = { 1, 4, 2, 3, 6, 5 };
-    D_02_ComparableStudent[] comparableStudents1 = { new D_02_ComparableStudent(1, "Alice", 98),
-        new D_02_ComparableStudent(2, "Bobo", 100), new D_02_ComparableStudent(3, "Charles", 66) };
-    D_02_ComparableStudent[] comparableStudents2 = { new D_02_ComparableStudent(1, "Alice", 98),
-        new D_02_ComparableStudent(2, "Bobo", 100), new D_02_ComparableStudent(3, "Charles", 66) };
+    ComparableStudent[] comparableStudents1 = { new ComparableStudent(1, "Alice", 98),
+        new ComparableStudent(2, "Bobo", 100), new ComparableStudent(3, "Charles", 66) };
+    ComparableStudent[] comparableStudents2 = { new ComparableStudent(1, "Alice", 98),
+        new ComparableStudent(2, "Bobo", 100), new ComparableStudent(3, "Charles", 66) };
 
     sort(array1);
     recursionSort(array2, 0);
@@ -29,11 +29,11 @@ public class A_02_SelectionSort {
       System.out.print(x + " ");
     }
     System.out.println();
-    for (D_02_ComparableStudent comparableStudent : comparableStudents1) {
+    for (ComparableStudent comparableStudent : comparableStudents1) {
       System.out.print(comparableStudent + " ");
     }
     System.out.println();
-    for (D_02_ComparableStudent comparableStudent : comparableStudents2) {
+    for (ComparableStudent comparableStudent : comparableStudents2) {
       System.out.print(comparableStudent + " ");
     }
     System.out.println();

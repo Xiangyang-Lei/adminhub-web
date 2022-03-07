@@ -1,8 +1,8 @@
-package com.pattern.go.algorithm;
+package com.pattern.go.algorithm.sub01;
 
-public class A_01_LinearSearch {
+public class LinearSearch {
 
-  private A_01_LinearSearch() {
+  private LinearSearch() {
   }
 
   public static void main(String[] args) {

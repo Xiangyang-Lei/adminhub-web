@@ -1,6 +1,6 @@
 package com.pattern.go.utils;
 
-import com.pattern.go.algorithm.A_02_SelectionSort;
+import com.pattern.go.algorithm.sub02.SelectionSort;
 
 public class SortingHelper {
 
@@ -24,7 +24,7 @@ public class SortingHelper {
 
     switch (sortName) {
     case "SelectionSort":
-      A_02_SelectionSort.sort(array);
+      SelectionSort.sort(array);
       break;
     default:
       break;

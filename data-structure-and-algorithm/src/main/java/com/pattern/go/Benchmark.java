@@ -1,9 +1,9 @@
 package com.pattern.go;
 
-import com.pattern.go.algorithm.A_01_LinearSearch;
-import com.pattern.go.datastructure.D_04_ArrayStack;
-import com.pattern.go.datastructure.D_02_ComparableStudent;
-import com.pattern.go.datastructure.D_03_Array;
+import com.pattern.go.datastructure.sub02.ComparableStudent;
+import com.pattern.go.datastructure.sub03.Array;
+import com.pattern.go.datastructure.sub04.ArrayStack;
+import com.pattern.go.algorithm.sub01.LinearSearch;
 import com.pattern.go.utils.ArrayGenerator;
 import com.pattern.go.utils.SortingHelper;
 
@@ -42,7 +42,7 @@ public class Benchmark {
 
   public static void arrayTest() {
 
-    D_03_Array<Integer> array = new D_03_Array<Integer>();
+    Array<Integer> array = new Array<Integer>();
 
     for (int i = 0; i < 10; i++) {
       array.addLast(i);
@@ -64,17 +64,17 @@ public class Benchmark {
     array.removeFirst();
     System.out.println(array);
 
-    D_03_Array<D_02_ComparableStudent> studentArray = new D_03_Array<D_02_ComparableStudent>();
+    Array<ComparableStudent> studentArray = new Array<ComparableStudent>();
 
-    studentArray.addLast(new D_02_ComparableStudent(1, "Alice", 100));
-    studentArray.addLast(new D_02_ComparableStudent(2, "Bob", 66));
-    studentArray.addLast(new D_02_ComparableStudent(3, "Charlie", 88));
+    studentArray.addLast(new ComparableStudent(1, "Alice", 100));
+    studentArray.addLast(new ComparableStudent(2, "Bob", 66));
+    studentArray.addLast(new ComparableStudent(3, "Charlie", 88));
     System.out.println(studentArray);
   }
 
   public static void stackTest() {
 
-    D_04_ArrayStack<Integer> stack = new D_04_ArrayStack<>();
+    ArrayStack<Integer> stack = new ArrayStack<>();
 
     for (int i = 0; i < 5; i++) {
       stack.push(i);
@@ -95,7 +95,7 @@ public class Benchmark {
 
       long startTime = System.nanoTime();
       for (int i = 0; i < iteration; i++) {
-        A_01_LinearSearch.search(array, size);
+        LinearSearch.search(array, size);
       }
       long endTime = System.nanoTime();
 
