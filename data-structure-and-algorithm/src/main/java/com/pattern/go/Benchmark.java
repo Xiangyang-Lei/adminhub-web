@@ -131,7 +131,7 @@ public class Benchmark {
 
     for (int size : sizes) {
       Integer[] array = ArrayGenerator.generateRandomArray(size, bound);
-      SortingHelper.sortTest("SelectionSort", array);
+      SortingHelper.sortTest("SELECTION_SORT", array);
     }
   }
 }

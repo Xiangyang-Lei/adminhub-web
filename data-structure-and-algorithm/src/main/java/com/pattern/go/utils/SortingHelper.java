@@ -23,7 +23,7 @@ public class SortingHelper {
     long startTime = System.nanoTime();
 
     switch (sortName) {
-    case "SelectionSort":
+    case "SELECTION_SORT":
       SelectionSort.sort(array);
       break;
     default:
