@@ -1,9 +1,10 @@
 package com.pattern.go;
 
+import com.pattern.go.algorithm.sub01.LinearSearch;
 import com.pattern.go.datastructure.sub02.ComparableStudent;
 import com.pattern.go.datastructure.sub03.Array;
 import com.pattern.go.datastructure.sub04.ArrayStack;
-import com.pattern.go.algorithm.sub01.LinearSearch;
+import com.pattern.go.datastructure.sub05.ArrayQueue;
 import com.pattern.go.utils.ArrayGenerator;
 import com.pattern.go.utils.SortingHelper;
 
@@ -14,25 +15,29 @@ public class Benchmark {
 
   public static void main(String[] args) {
 
-    String mode = "Stack";
+    String mode = "QUEUE";
 
     switch (mode) {
     /**
      * Data Structure Test
      */
-    case "Array":
+    case "ARRAY":
       arrayTest();
       break;
-    case "Stack":
+    case "STACK":
       stackTest();
       break;
+    case "QUEUE":
+      queueTest();
+      break;
+
     /**
      * Algorithm Test
      */
-    case "LinearSearch":
+    case "LINEAR_SEARCH":
       linearSearchTest();
       break;
-    case "SelectionSort":
+    case "SELECTION_SORT":
       selectionSortTest();
       break;
     default:
@@ -74,7 +79,7 @@ public class Benchmark {
 
   public static void stackTest() {
 
-    ArrayStack<Integer> stack = new ArrayStack<>();
+    ArrayStack<Integer> stack = new ArrayStack<Integer>();
 
     for (int i = 0; i < 5; i++) {
       stack.push(i);
@@ -83,6 +88,21 @@ public class Benchmark {
 
     stack.pop();
     System.out.println(stack);
+  }
+
+  public static void queueTest() {
+
+    ArrayQueue<Integer> queue = new ArrayQueue<Integer>();
+
+    for (int i = 0; i < 10; i++) {
+      queue.enqueue(i);
+      System.out.println(queue);
+
+      if (i % 3 == 2) {
+        queue.dequeue();
+        System.out.println(queue);
+      }
+    }
   }
 
   public static void linearSearchTest() {
