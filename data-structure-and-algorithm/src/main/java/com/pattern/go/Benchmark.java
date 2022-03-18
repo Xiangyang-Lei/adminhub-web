@@ -1,10 +1,10 @@
 package com.pattern.go;
 
-import com.pattern.go.algorithm.sub01.LinearSearch;
-import com.pattern.go.datastructure.sub02.ComparableStudent;
-import com.pattern.go.datastructure.sub03.Array;
-import com.pattern.go.datastructure.sub04.ArrayStack;
-import com.pattern.go.datastructure.sub05.ArrayQueue;
+import com.pattern.go.algorithm.sub01linearsearch.LinearSearch;
+import com.pattern.go.datastructure.sub01student.ComparableStudent;
+import com.pattern.go.datastructure.sub02array.Array;
+import com.pattern.go.datastructure.sub03stack.ArrayStack;
+import com.pattern.go.datastructure.sub04queue.ArrayQueue;
 import com.pattern.go.utils.ArrayGenerator;
 import com.pattern.go.utils.SortingHelper;
 

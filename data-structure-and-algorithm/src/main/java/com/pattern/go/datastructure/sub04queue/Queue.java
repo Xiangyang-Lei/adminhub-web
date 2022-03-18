@@ -1,4 +1,4 @@
-package com.pattern.go.datastructure.sub05;
+package com.pattern.go.datastructure.sub04queue;
 
 public interface Queue<E> {
 

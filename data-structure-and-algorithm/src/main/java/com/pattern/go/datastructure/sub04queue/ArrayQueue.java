@@ -1,17 +1,17 @@
-package com.pattern.go.datastructure.sub04;
+package com.pattern.go.datastructure.sub04queue;
 
-import com.pattern.go.datastructure.sub03.Array;
+import com.pattern.go.datastructure.sub02array.Array;
 
-public class ArrayStack<E> implements Stack<E> {
+public class ArrayQueue<E> implements Queue<E> {
 
   private Array<E> array;
 
-  public ArrayStack(int capacity) {
+  public ArrayQueue(int capacity) {
 
     array = new Array<E>(capacity);
   }
 
-  public ArrayStack() {
+  public ArrayQueue() {
 
     array = new Array<E>();
   }
@@ -34,21 +34,21 @@ public class ArrayStack<E> implements Stack<E> {
   }
 
   @Override
-  public void push(E element) {
+  public void enqueue(E element) {
 
     array.addLast(element);
   }
 
   @Override
-  public E pop() {
+  public E dequeue() {
 
-    return array.removeLast();
+    return array.removeFirst();
   }
 
   @Override
-  public E peek() {
+  public E getFront() {
 
-    return array.getLast();
+    return array.getFirst();
   }
 
   @Override
@@ -56,15 +56,15 @@ public class ArrayStack<E> implements Stack<E> {
 
     StringBuilder result = new StringBuilder();
 
-    result.append("Stack: ");
-    result.append('[');
+    result.append("Queue: ");
+    result.append("front [");
     for (int i = 0; i < array.getSize(); i++) {
       result.append(array.get(i));
       if (i != array.getSize() - 1) {
         result.append(", ");
       }
     }
-    result.append("] top");
+    result.append("] tail");
 
     return result.toString();
   }

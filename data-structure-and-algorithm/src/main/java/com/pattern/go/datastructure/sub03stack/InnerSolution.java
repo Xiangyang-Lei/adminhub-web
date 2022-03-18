@@ -1,4 +1,4 @@
-package com.pattern.go.datastructure.sub04;
+package com.pattern.go.datastructure.sub03stack;
 
 public class InnerSolution {
 

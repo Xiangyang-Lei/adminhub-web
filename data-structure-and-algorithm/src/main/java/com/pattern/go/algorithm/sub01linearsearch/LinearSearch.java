@@ -1,4 +1,4 @@
-package com.pattern.go.algorithm.sub01;
+package com.pattern.go.algorithm.sub01linearsearch;
 
 public class LinearSearch {
 

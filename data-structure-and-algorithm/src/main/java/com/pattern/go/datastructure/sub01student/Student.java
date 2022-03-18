@@ -1,4 +1,4 @@
-package com.pattern.go.datastructure.sub01;
+package com.pattern.go.datastructure.sub01student;
 
 import java.util.Objects;
 

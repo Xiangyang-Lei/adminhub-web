@@ -1,4 +1,4 @@
-package com.pattern.go.datastructure.sub03;
+package com.pattern.go.datastructure.sub02array;
 
 public class Array<E> {
 

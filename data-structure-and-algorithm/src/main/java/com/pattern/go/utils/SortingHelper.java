@@ -1,6 +1,6 @@
 package com.pattern.go.utils;
 
-import com.pattern.go.algorithm.sub02.SelectionSort;
+import com.pattern.go.algorithm.sub02selectionsort.SelectionSort;
 
 public class SortingHelper {
 

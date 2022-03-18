@@ -1,6 +1,6 @@
-package com.pattern.go.algorithm.sub02;
+package com.pattern.go.algorithm.sub02selectionsort;
 
-import com.pattern.go.datastructure.sub02.ComparableStudent;
+import com.pattern.go.datastructure.sub01student.ComparableStudent;
 
 public class SelectionSort {
 
