@@ -269,8 +269,9 @@ public class Array<E> {
     result.append('[');
     for (int i = 0; i < size; i++) {
       result.append(data[i]);
-      if (i != size - 1)
+      if (i != size - 1) {
         result.append(", ");
+      }
     }
     result.append(']');
 

@@ -1,10 +1,15 @@
 package com.pattern.go;
 
+import java.util.Random;
+
 import com.pattern.go.algorithm.sub01linearsearch.LinearSearch;
 import com.pattern.go.datastructure.sub01student.ComparableStudent;
 import com.pattern.go.datastructure.sub02array.Array;
 import com.pattern.go.datastructure.sub03stack.ArrayStack;
+import com.pattern.go.datastructure.sub03stack.Stack;
 import com.pattern.go.datastructure.sub04queue.ArrayQueue;
+import com.pattern.go.datastructure.sub04queue.LoopQueue;
+import com.pattern.go.datastructure.sub04queue.Queue;
 import com.pattern.go.utils.ArrayGenerator;
 import com.pattern.go.utils.SortingHelper;
 
@@ -22,30 +27,31 @@ public class Benchmark {
      * Data Structure Test
      */
     case "ARRAY":
-      arrayTest();
+      testArray();
       break;
     case "STACK":
-      stackTest();
+      testStack();
       break;
     case "QUEUE":
-      queueTest();
+      testQueue(new ArrayQueue<Integer>(), 100 * 1000);
+      testQueue(new LoopQueue<Integer>(), 100 * 1000);
       break;
 
     /**
      * Algorithm Test
      */
     case "LINEAR_SEARCH":
-      linearSearchTest();
+      testLinearSearch();
       break;
     case "SELECTION_SORT":
-      selectionSortTest();
+      testSelectionSort();
       break;
     default:
       break;
     }
   }
 
-  public static void arrayTest() {
+  public static void testArray() {
 
     Array<Integer> array = new Array<Integer>();
 
@@ -77,9 +83,9 @@ public class Benchmark {
     System.out.println(studentArray);
   }
 
-  public static void stackTest() {
+  public static void testStack() {
 
-    ArrayStack<Integer> stack = new ArrayStack<Integer>();
+    Stack<Integer> stack = new ArrayStack<Integer>();
 
     for (int i = 0; i < 5; i++) {
       stack.push(i);
@@ -90,22 +96,25 @@ public class Benchmark {
     System.out.println(stack);
   }
 
-  public static void queueTest() {
+  public static void testQueue(Queue<Integer> queue, int operationCount) {
 
-    ArrayQueue<Integer> queue = new ArrayQueue<Integer>();
+    long startTime = System.nanoTime();
 
-    for (int i = 0; i < 10; i++) {
-      queue.enqueue(i);
-      System.out.println(queue);
-
-      if (i % 3 == 2) {
-        queue.dequeue();
-        System.out.println(queue);
-      }
+    Random random = new Random();
+    for (int i = 0; i < operationCount; i++) {
+      queue.enqueue(random.nextInt(Integer.MAX_VALUE));
     }
+    for (int i = 0; i < operationCount; i++) {
+      queue.dequeue();
+    }
+
+    long endTime = System.nanoTime();
+
+    double time = (endTime - startTime) / (1000 * 1000 * 1000 * 1.0);
+    System.out.println("time: " + time + " s");
   }
 
-  public static void linearSearchTest() {
+  public static void testLinearSearch() {
 
     int[] sizes = { 1000 * 1000, 10 * 1000 * 1000 };
     int iteration = 100;
@@ -124,7 +133,7 @@ public class Benchmark {
     }
   }
 
-  public static void selectionSortTest() {
+  public static void testSelectionSort() {
 
     int[] sizes = { 10000, 100000 };
     int bound = 10000;

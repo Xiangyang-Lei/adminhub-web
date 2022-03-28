@@ -31,7 +31,7 @@ public class SortingHelper {
     }
 
     long endTime = System.nanoTime();
-    double time = (endTime - startTime) / 1000000000.0;
+    double time = (endTime - startTime) / (1000 * 1000 * 1000 * 1.0);
 
     if (!isSorted(array)) {
       throw new RuntimeException(sortName + " failed");
