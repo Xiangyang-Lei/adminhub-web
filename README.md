@@ -12,3 +12,11 @@ Project Introduction
 ## Project Structure
 
 Project Structure
+
+## Project Resources
+
+Project Resources
+
+## Special Thanks
+
+Special Thanks
