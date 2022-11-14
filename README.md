@@ -16,8 +16,8 @@
 - [Usage](#usage)
 - [Development](#development)
 - [Contribute](#contribute)
-    - [Sponsor](#sponsor)
-    - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
+  - [Sponsor](#sponsor)
+  - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
 - [License](#license)
 - [Footer](#footer)
 
