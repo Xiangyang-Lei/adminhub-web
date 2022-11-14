@@ -20,3 +20,10 @@ Project Resources
 ## Special Thanks
 
 Special Thanks
+
+## Related Projects
+
+- Open Platform for AI (OpenPAI)
+- Neural Network Intelligence (NNI)
+
+[Open Platform for AI (OpenPAI)](https://github.com/Microsoft/pai)
