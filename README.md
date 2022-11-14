@@ -1,7 +1,7 @@
 <h1 style="text-align: center">CSHub4cxx</h1>
 <div style="text-align: center">
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/raymond-ley/cshub4cxx)](https://github.com/raymond-ley/cshub4cxx/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/raymond-ley/cshub4j)](https://github.com/raymond-ley/cshub4cxx/commits/main)
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)](https://github.com/raymond-ley/cshub4cxx/releases)
 [![AUR](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg)](https://github.com/raymond-ley/cshub4cxx/blob/main/LICENSE)
 
