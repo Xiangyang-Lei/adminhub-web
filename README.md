@@ -62,4 +62,8 @@ Models | Caffe | Keras | TensorFlow | CNTK | MXNet | PyTorch  | CoreML | ONNX
 [voc FCN](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) |       |       |     √      |   √  |       |
 Yolo3
 
+## License
+
+[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+
 ## Links
