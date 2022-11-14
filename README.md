@@ -29,6 +29,25 @@ Project Introduction
 
 Project Structure
 
+#### 详细结构
+
+```
+- eladmin-common 公共模块
+    - annotation 为系统自定义注解
+    - aspect 自定义注解的切面
+    - base 提供了Entity、DTO基类和mapstruct的通用mapper
+    - config 自定义权限实现、redis配置、swagger配置、Rsa配置等
+    - exception 项目统一异常的处理
+    - utils 系统通用工具类
+- eladmin-system 系统核心模块（系统启动入口）
+	- config 配置跨域与静态资源，与数据权限
+	    - thread 线程池相关
+	- modules 系统相关模块(登录授权、系统监控、定时任务、运维管理等)
+- eladmin-logging 系统日志模块
+- eladmin-tools 系统第三方工具模块
+- eladmin-generator 系统代码生成模块
+```
+
 ## Project Resources
 
 Project Resources
