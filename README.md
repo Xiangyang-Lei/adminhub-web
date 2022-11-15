@@ -1,4 +1,3 @@
-### TODO
 <h1 style="text-align: center">CSHub4cxx</h1>
 <div style="text-align: center">
 
@@ -6,6 +5,8 @@
 [![GitHub license](https://img.shields.io/github/license/raymond-ley/cshub4cxx.svg)](https://github.com/raymond-ley/cshub4cxx/blob/main/LICENSE)
 
 </div>
+
+### TODO
 
 ## Table of contents
 
