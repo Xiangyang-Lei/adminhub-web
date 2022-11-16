@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Project Introduction
+Introduction
 
 ## Table of Contents
 
@@ -24,8 +24,10 @@ Project Structure
 
 ### Module Structure
 
+TODO: Move Module Structure to Module README.md
+
 ```
-目录树结构
+tree # directory tree
 ```
 
 ## Project Resources
