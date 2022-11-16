@@ -17,6 +17,7 @@ Introduction
 - [Project Structure](#project-structure)
   - [Module Structure](#module-structure)
 - [Project Resources](#project-resources)
+- [Special Thanks](#special-thanks)
 
 ## Project Structure
 
