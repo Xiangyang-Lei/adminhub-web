@@ -42,7 +42,7 @@ Special Thanks
 
 ## License
 
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
+[Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0)
 
 ## Related Projects
 
