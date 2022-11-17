@@ -18,6 +18,7 @@ Introduction
   - [Module Structure](#module-structure)
 - [Project Resources](#project-resources)
 - [Special Thanks](#special-thanks)
+- [License](#license)
 
 ## Project Structure
 
@@ -38,6 +39,10 @@ Project Resources
 ## Special Thanks
 
 Special Thanks
+
+## License
+
+[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
 
 ## Related Projects
 
