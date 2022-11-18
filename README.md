@@ -88,8 +88,3 @@ Yolo3
 **ToDo**:
 
 - [ ] cshub4cxx.cpp
-
-## Thanks
-
-- 感谢 [JetBrains](https://www.jetbrains.com/) 提供的非商业开源软件开发授权
-- Thanks for the Open Source license provided by [JetBrains](https://www.jetbrains.com/?from=cshub4cxx)
