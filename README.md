@@ -40,7 +40,7 @@ Project Resources
 
 - Thanks for the Open Source development license provided by [JetBrains](https://www.jetbrains.com)
 
-[![JetBrains OpenSourceSupport](https://www.jetbrains.com/company/brand/#logos-and-icons)](https://jb.gg/OpenSourceSupport)
+[![JetBrains open source support](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png)](https://jb.gg/OpenSourceSupport)
 
 ## License
 
