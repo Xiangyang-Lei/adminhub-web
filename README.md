@@ -86,3 +86,5 @@ Yolo3
 ## Thanks
 
 - 感谢 [JetBrains](https://www.jetbrains.com/) 提供的非商业开源软件开发授权
+- Thanks to JetBrains for supporting with Open Source license
+- Thanks for the Open Source license provided by [JetBrains](https://www.jetbrains.com/)
