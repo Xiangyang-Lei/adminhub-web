@@ -42,7 +42,7 @@ Special thanks for the Open Source development license provided by [JetBrains](h
 
 <p align="left">
   <a href="https://jb.gg/OpenSourceSupport">
-    <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" width=200 alt="JetBrains open source support" />
+    <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" width="180" height="180" alt="JetBrains Logo">
   </a>
 </p>
 
@@ -56,6 +56,8 @@ Special thanks for the Open Source development license provided by [JetBrains](h
 - Neural Network Intelligence (NNI)
 
 [Open Platform for AI (OpenPAI)](https://github.com/Microsoft/pai)
+
+## Reference
 
 ## Table
 
@@ -77,7 +79,7 @@ Models | Caffe | Keras | TensorFlow | CNTK | MXNet | PyTorch  | CoreML | ONNX
 [voc FCN](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) |       |       |     √      |   √  |       |
 Yolo3
 
-## CSHub4j
+## Raw
 
 ## Project
 
