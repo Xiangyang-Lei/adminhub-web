@@ -38,7 +38,7 @@ Project Resources
 
 ## Special Thanks
 
-Special thanks for the Open Source development license provided by [JetBrains](https://www.jetbrains.com).
+Special thanks for the Open Source development license provided by [JetBrains](https://www.jetbrains.com/?from=cshub4cxx).
 
 <p align="left">
   <a href="https://jb.gg/OpenSourceSupport">
