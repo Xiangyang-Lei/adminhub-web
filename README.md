@@ -13,9 +13,13 @@ Introduction
 ## Table of Contents
 
 - [Introduction](#introduction)
+
 - [Table of Contents](#table-of-contents)
+
 - [Project Structure](#project-structure)
+
 - [Special Thanks](#special-thanks)
+
 - [License](#license)
 
 ## Project Structure
