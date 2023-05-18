@@ -15,26 +15,12 @@ Introduction
 - [Introduction](#introduction)
 - [Table of Contents](#table-of-contents)
 - [Project Structure](#project-structure)
-  - [Module Structure](#module-structure)
-- [Project Resources](#project-resources)
 - [Special Thanks](#special-thanks)
 - [License](#license)
 
 ## Project Structure
 
 Project Structure
-
-### Module Structure
-
-TODO: Move Module Structure to Module README.md
-
-```
-tree # directory tree
-```
-
-## Project Resources
-
-Project Resources
 
 ## Special Thanks
 
