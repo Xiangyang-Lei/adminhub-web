@@ -1,8 +1,9 @@
 <h1 style="text-align: center">CSHub4cxx</h1>
+
 <div style="text-align: center">
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/raymond-ley/cshub4cxx.svg)](https://github.com/raymond-ley/cshub4cxx/commits/main)
-[![GitHub license](https://img.shields.io/github/license/raymond-ley/cshub4cxx.svg)](https://github.com/raymond-ley/cshub4cxx/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/sunray-ley/cshub4cxx.svg)](https://github.com/sunray-ley/cshub4cxx/commits/main)
+[![GitHub license](https://img.shields.io/github/license/sunray-ley/cshub4cxx.svg)](https://github.com/sunray-ley/cshub4cxx/blob/main/LICENSE)
 
 </div>
 
@@ -20,8 +21,6 @@ Introduction
 
 - [Special Thanks](#special-thanks)
 
-- [License](#license)
-
 ## Project Structure
 
 Project Structure
@@ -31,7 +30,5 @@ Project Structure
 Special thanks for the Open Source development license provided by [JetBrains](https://www.jetbrains.com).
 
 <p align="left">
-  <a href="https://jb.gg/OpenSourceSupport">
-    <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" width="180" height="180" alt="JetBrains Logo">
-  </a>
+  <a href="https://jb.gg/OpenSourceSupport"><img alt="JetBrains Logo" width="180" height="180" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png"></a>
 </p>
